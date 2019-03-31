@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/store-inventory
+    url: jdbc:postgresql://localhost:5432/store-inventory?currentSchema=store_inventory
     username: postgres
     password: z9u8b2i4
   jpa:
@@ -9,3 +9,5 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+  liquibase:
+    change-log: classpath:/db/changelog.yml

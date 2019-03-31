@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: Marcin Zubrzycki
+      sqlFile:
+        path: scripts/0002_create_pc_table.sql
+        relativeToChangelogFile: true
+  - changeSet:
+      id: 3
+      author: Marcin Zubrzycki
+      sqlFile:
+        path: scripts/0003_create_laptop_table.sql
+        relativeToChangelogFile: true
+  - changeSet:
+      id: 4
+      author: Marcin Zubrzycki
+      sqlFile:
+        path: scripts/0004_create_smartphone_table.sql
+        relativeToChangelogFile: true
